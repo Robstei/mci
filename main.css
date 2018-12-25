@@ -1,0 +1,45 @@
+body {
+    background-image: url("images/backgroundIndex.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#txt-pw-forgotten {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#txt-pw-forgotten:hover {
+    text-decoration: underline;
+}
+
+#row-top {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#logo-text{
+    display: flex;
+    align-items: center;
+}
+
+#login-form-container {
+    margin-top: 50px;
+}
+
+.big-text {
+    font-size: 60px;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.text-form-index {
+    color: white;
+}
+
+.text-index-title {
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+}
