@@ -4,63 +4,147 @@
         <title>WG Match Startseite</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <link href="main.css" rel="stylesheet">
+        <script src="main.js"></script>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row" id="row-top">
-                <div class = "col-lg-4 offset-lg-1" id="logo-text">
+                <div class = "col-md-4 offset-md-1" id="logo-text">
                     <img src="images/logo.png" class="logo" alt="Logo" height="100" width="100">                
                     <span class="big-text">WG Match</span>
+                    
                 </div>
-                <div class="col-lg-6 offset-lg-1" id="login-form-container">
-                    <form action="" class="form-inline">
-                        <table>
-                            <tr>
-                                <td>
-                                    <input type="text" class="form-control" name="email-login" placeholder="E-Mail-Adresse">
-                                </td>
-                                <td>
+                <div class="col-md-6 offset-md-1" id="login-form-container">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="col-md-3 form-group">
+                                <input type="text" class="form-control" name="email-login" placeholder="E-Mail-Adresse">
+                            </div>
+                            <div class="col-md-3 form-group">
                                 <input type="password" class="form-control" name="password-login" placeholder="Passwort">
-                                </td>
-                                <td>
-                                <button type="button" class="btn btn-light">Anmelden</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> 
-                                </td>
-                                <td>
-                                    <div id="txt-pw-forgotten">Passwort vergessen?</div>
-                                </td>
-                            </tr>
-                        </table>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <button class="btn btn-light">Anmelden</button>
+                            </div>  
+                        </div>  
+                        <div class="form-row">
+                            <div class="col-md-3 offset-md-3">
+                                <span id="txt-pw-forgotten">Passwort vergessen?</span>
+                            </div>
+                        </div> 
                     </form>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 offset-lg-1">
+                <div class="col-md-3 offset-md-1">
                     <form>
-                        <span>Registriere dich als Wg</span>
-                        <input type="text" name="street" placeholder="Straße">
-                        <input type="text" name="street-nb" placeholder="Hausnummer">
-                        <input type="text" name="plz" placeholder="PLZ">
-                        <input type="text" name="city" placeholder="Stadt">
-                        <input type="text" name="email-register-wg" placeholder="E-Mail-Adresse">
-                        <input type="password" name="password-register-wg" placeholder="Stadt">
-                        <div class="custom-radio">
-                            <input type="radio" name="unisex-wg" id="unisex-wg">
-                            <label for="inisex-wg" >Gemischte WG</label>
-                            <input type="radio" name="women-wg" id="women-wg">
-                            <label for="inisex-wg" >Gemischte WG</label>
-                            <input type="radio" name="men-wg" id="men-wg">
-                            <label for="inisex-wg" >Gemischte WG</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <span class="text-index-title">Registriere dich als WG</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-10 form-group">
+                                <input type="text" class="form-control" name="street" placeholder="Straße">
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <input type="text" class="form-control" name="street-nb" placeholder="Nr">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-3 form-group">
+                                <input type="text" class="form-control"name="plz" placeholder="PLZ">
+                            </div>
+                            <div class="col-md-9 form-group">
+                                <input type="text" class="form-control" name="city" placeholder="Stadt">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <input type="text" class="form-control" name="email-register-wg" placeholder="E-Mail-Adresse">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <input type="password" class="form-control" name="password-register-wg" placeholder="Passwort">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"  name="radio-wg" id="unisex-wg" value="1">
+                                    <label for="unisex-wg" class="form-check-label text-form-index">Gemischte WG</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="radio-wg" id="women-wg" value="2">
+                                    <label for="women-wg" class="form-check-label text-form-index">Frauen WG</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="radio-wg" id="men-wg" value="3">
+                                    <label for="men-wg" class="form-check-label text-form-index">Männer WG</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="accept-wg" id="accept-wg">
+                                    <label for="accept-wg" class="form-check-label text-form-index">Ich akzeptiere die Nutzungsbedingungen</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn btn-light btn-lg btn-block">Registrieren</button>
+                            </div>
                         </div>
                     </form>
-                </divY>
+                </div>
 
-                <div class="col-lg-5 offset-lg-1"></div>
+                <div class="col-md-5 offset-md-1">
+                        <form>
+                                <div class="form-row">
+                                  <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                  </div>
+                                  <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                  </div>
+                                </div>
+
+                                <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="men-wg" id="men-wg" value="3">
+                                        <label class="form-check-label" for="men-wg">Männer WG</label>
+                                    </div>
+                                <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                        <label  for="inlineRadio3">3 (disabled)</label>
+                                      </div>
+                                      <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="men-wg" id="men-wg" value="3">
+                                            <label for="men-wg">Männer WG</label>
+                                        </div>
+                                            <button class="btn btn-light btn-lg btn-block">Registrieren</button>
+                              </form>
+                </div>
             </div>>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <link href="main.css" rel="stylesheet">
+        <script src="main.js"></script>
     </body>
 </html>
