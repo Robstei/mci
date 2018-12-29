@@ -1,12 +1,35 @@
-body {
+#body-index {
     background-image: url("images/backgroundIndex.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+#body-main-page{
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav{
+    background-image: url("images/backgroundIndex.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.nav-link{
+    height: 15%;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 #txt-pw-forgotten {
     font-size: 1.1em;
     font-weight: bold;
+    color: black;
 }
 
 #txt-pw-forgotten:hover {
@@ -41,5 +64,5 @@ body {
 .text-index-title {
     color: black;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 20px;
 }
