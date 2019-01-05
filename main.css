@@ -4,40 +4,44 @@
     background-size: 100% 100%;
 }
 
-#body-main-page{
+.navbar { 
+    padding: 0;
+} 
+
+#body-main-page {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-.nav{
-    background-image: url("images/backgroundIndex.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100%;
-    justify-content: space-around;
-}
-
-.nav-link{
-    height: 15%;
+.arrow {
+    margin-left: 10px;
+    padding: 2px 5px 2px 5px;
+    background-color: white;
 }
 
 .nav-link:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#txt-pw-forgotten {
+.text-link {
     font-size: 1.1em;
     font-weight: bold;
     color: black;
 }
 
-#txt-pw-forgotten:hover {
+.text-link:hover {
     text-decoration: underline;
+    color:black;
 }
 
 #row-top {
     background: rgba(255, 255, 255, 0.5);
+}
+
+.container-white {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #logo-text{
@@ -53,8 +57,11 @@
     font-size: 60px;
 }
 
+
 .logo {
     margin: 10px;
+    height: 40px;
+    width: 40px;
 }
 
 .text-form-index {
@@ -65,4 +72,9 @@
     color: black;
     font-weight: bold;
     font-size: 20px;
+}
+.logo-index {
+    margin: 10px;
+    height: 100px;
+    width: 100px; 
 }
