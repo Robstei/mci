@@ -47,22 +47,18 @@ function filterFunction(person){
 function createProfileList(arrayPersons) {
 
     $("#container-wg-profiles").empty();
-    
 
     $.each(arrayPersons, function(index, value) {
-    if(index % 2 == 0) {
-        $("#container-wg-profiles").append(`<div class="my-5" style="position:relative; width:500px; height:500px;" id="container-profile-${index}"></div>`);
-    } else {
-        $("#container-wg-profiles").append(`<div class="my-5" style="position:relative; width:500px; height:500px;" id="container-profile-${index}"></div>`);
-    }
+    
+    $("#container-wg-profiles").append(`<div class="my-5 container-profile" style="display:inline-block; position:relative; width:400px; height:400px;" id="container-profile-${index}"></div>`);
 
-    $(`#container-profile-${index}`).append(`<a style="position:absolute;" height:"500px" width:"500px" href="${value.profileURL}"><img id="profilePicture-${index}" src="${value.profilePicture}" style="position:absolute; height:500px; width:500px" alt="Profilbild"></img></a>`);
+    $(`#container-profile-${index}`).append(`<a style="position:absolute; height:400px; width:400px; display:block;" href="${value.profileURL}"><img id="profilePicture-${index}" src="${value.profilePicture}" style="position:absolute; height:400px; width:400px" alt="Profilbild"></img></a>`);
 
     if(value.smoking) {
         $(`#container-profile-${index}`).append(`<img style="position:absolute; bottom:5px; left:20px;" src="images/smoking.jpg" height="30px" width="30px" alt="Raucher"></img>`);
     }
     
-    $(`#container-profile-${index}`).append(`<img style="position:absolute;" class="interests-picture" id="InterestsPicture-${index}" src="${value.interests}" height="500px" width="500px" alt="Interessen" ></img>`);
+    $(`#container-profile-${index}`).append(`<img style="position:absolute;" class="interests-picture" id="InterestsPicture-${index}" src="${value.interests}" height="400px" width="400px" alt="Interessen" ></img>`);
     });
 };
 
@@ -78,5 +74,4 @@ $(document).ready(function() {
 
     createProfileList(arrayPersons);
 });
-
 

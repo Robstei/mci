@@ -1,0 +1,30 @@
+Hannah und Lina:
+	- FAQ: ungefähr 10 Fragen mit Antworten
+	- Einstellungen: Welche Einstellung sollten wir noch anbieten
+	- Startseite für User die sich als WG gerade einloggt haben(eventuell so wie hier: https://www.wg-gesucht.de/)
+	- Profilseiten von der WG und den Suchenden erstellen
+		- Suchende: Texte "Über mich" für Profile von Robin und Hannah, Ein Kurzvideo von Hannah " Wer bin ich"
+		- WG: Texte "Über uns"
+
+Oli
+	- Nachrichtenseite erstellen(mit Kontakte)
+		- mit Link zu Profilseiten
+	- Robin einzelne Profilbilder geben + Icons für Haustier
+	
+Robin
+	- Navbar schöner machen
+	- Filter schöner machen
+	- Anordnung Profile richtig machen
+	- Laden der Profile in Gruppen(Seitenende)
+	- Caroussel einfügen
+	- FAQ collapse
+	- Form autocomplete
+
+	
+
+
+
+
+
+
+
