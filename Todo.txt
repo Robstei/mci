@@ -12,7 +12,6 @@ Oli
 	- Robin einzelne Profilbilder geben + Icons für Haustier
 	
 Robin
-	- Navbar schöner machen
 	- Filter schöner machen
 	- Anordnung Profile richtig machen
 	- Laden der Profile in Gruppen(Seitenende)

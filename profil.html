@@ -11,42 +11,159 @@
         <div class="container container-white">
             <div class="row">
                 <nav class="col-md-12 navbar navbar-expand-md navbar-dark bg-dark">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapse_target">
-                        <a class="navbar-brand" href="main_page.html"><img class="logo" src="images/logo.png"></a>
-                        <span class="navbar-text">WG Match</span>
-        
-                        <ul class=" navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="profil.html">Profil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="main_page.html">Suche</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nachrichten.html">Nachrichten</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="kontakte.html">Kontakte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="einstellungen.html">Einstellungen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>
-                        </ul>
+                    <div class="container">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapse_target">
+                            <a class="navbar-brand" href="main_page.html"><img class="logo" src="images/logo.png"></a>
+                            <span class="navbar-brand">WG Match</span>
+            
+                            <ul class=" navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="profil.html">Profil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="main_page.html">Suche</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nachrichten.html">Nachrichten</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="kontakte.html">Kontakte</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="einstellungen.html">Einstellungen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
-                
+            </div>
+            <div class="row">
+                <div class="offset-1 col-6 mt-2">
+                    <label id="profile-text-top">So sieht euer Profil für andere aus</label>
+                </div>
+                <div class="offset-2 col-3 mt-2">
+                    <button class="btn btn-light">Profil bearbeiten</button>
+                </div>
+                <div class="col">
+                    <label class="label-wg-top">Das sind Wir</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <video width=100% controls>
+                        <source src="videos/video.mp4" type="video/mp4">
+                    </video>
+                    <span class="m-1" id="white-box">
+                        <image src="images/icons/men.png"></image>
+                        <image src="images/icons/men.png"></image>
+                        <image src="images/icons/women.png"></image>
+                        <image src="images/icons/one.png"></image>
+                    </span>
+
+                    <span class="m-1" id="white-box">
+                        <image src="images/icons/tier.png" height="50" width="50"></image>
+                    </span>
+
+                    <span class="m-1" id="white-box">
+                        <image src="images/icons/cigarette_not.png" height="50" width="50"></image>
+                    </span>
+                    <!--
+                        <audio controls class="mt-2">
+                            <source src="audio/audio-wg.mp3" type="audio/mp3">
+                        </audio>
+                    -->
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div id="pictures-wg" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#pictures-wg" data-slide-to="0" class="active"></li>
+                            <li data-target="#pictures-wg" data-slide-to="1"></li>
+                            <li data-target="#pictures-wg" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/wgpicture1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="images/wgpicture1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="images/wgpicture1.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#pictures-wg" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#pictures-wg" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <table class="table table-dark">
+                            <tr class="table-header">
+                            <th colspan="2">Zimmer und Miete</th>
+                            </tr>
+                            <tr>
+                            <td>Größe:</td>
+                            <td>15m<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                            <td>Kaltmiete:</td>
+                            <td>280€</td>
+                            </tr>
+                            <tr>
+                            <td>Nebenkosten:</td>
+                            <td>100€</td>
+                            </tr>
+                            <tr>
+                            <td>Gesamtmiete:</td>
+                            <td>380€</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <table class="table table-dark">
+                            <tr class="table-header">
+                            <th colspan="2">Die Wohnung</th>
+                            </tr>
+                            <tr>
+                            <td>Größe:</td>
+                            <td>85m<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                            <td>Etage:</td>
+                            <td>EG</td>
+                            </tr>
+                            <tr>
+                            <td>Balkone:</td>
+                            <td>2</td>
+                            </tr>
+                            <tr>
+                            <td>Bäder:</td>
+                            <td>2</td>
+                            </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="jquery.fittext.js"></script>
         <link href="main.css" rel="stylesheet">
         <script src="main.js"></script>
     </body>
