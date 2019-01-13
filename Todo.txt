@@ -12,12 +12,9 @@ Oli
 	- Robin einzelne Profilbilder geben + Icons für Haustier
 	
 Robin
-	- Filter schöner machen
-	- Anordnung Profile richtig machen
-	- Laden der Profile in Gruppen(Seitenende)
-	- Caroussel einfügen
-	- FAQ collapse
-	- Form autocomplete
+	- Bilder für Caroussel
+	
+
 
 	
 

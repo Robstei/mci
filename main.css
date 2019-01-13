@@ -71,6 +71,7 @@
     font-weight: bold;
     font-size: 20px;
 }
+
 .logo-index {
     margin: 10px;
     height: 100px;
@@ -117,8 +118,6 @@
     text-align: center;
     font-size: 2em;
 }
-
-
 
 #white-box {
     display: inline-block;
